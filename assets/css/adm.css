@@ -644,6 +644,18 @@ img { max-width: 100%; display: block; }
   gap: 1rem;
 }
 
+.news-year-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--meta);
+  margin: 2.25rem 0 0.5rem;
+}
+
+.news-year-label:first-child { margin-top: 0; }
+
+/* Standard compact card */
 .news-card {
   display: grid;
   grid-template-columns: 64px 1fr;
@@ -653,6 +665,33 @@ img { max-width: 100%; display: block; }
   border-radius: var(--r);
   padding: 1.4rem 1.5rem;
   align-items: start;
+}
+
+/* Featured card — with a photo at the top */
+.news-card--featured {
+  display: block;
+  padding: 0;
+  overflow: hidden;
+}
+
+.news-card--featured .news-card-img {
+  width: 100%;
+  max-height: 320px;
+  object-fit: cover;
+  display: block;
+}
+
+.news-card--featured .news-card-body {
+  display: grid;
+  grid-template-columns: 64px 1fr;
+  gap: 1.5rem;
+  padding: 1.4rem 1.5rem;
+  align-items: start;
+}
+
+/* Publication badge variant */
+.news-badge--pub {
+  background: var(--slate);
 }
 
 .news-badge {
@@ -693,8 +732,17 @@ img { max-width: 100%; display: block; }
   line-height: 1.65;
 }
 
+.news-link {
+  display: inline-block;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--accent);
+  margin-top: 0.45rem;
+}
+
 @media (max-width: 500px) {
-  .news-card { grid-template-columns: 1fr; }
+  .news-card,
+  .news-card--featured .news-card-body { grid-template-columns: 1fr; }
   .news-badge { flex-direction: row; gap: 0.4rem; width: fit-content; border-radius: 4px; padding: 0.3rem 0.6rem; }
 }
 

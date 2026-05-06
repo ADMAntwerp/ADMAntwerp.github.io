@@ -33,46 +33,157 @@
   <div class="page-banner">
     <div class="page-banner-inner">
       <h1>News</h1>
-      <p>Latest updates from the ADM Research Group</p>
+      <p>Updates from the ADM Research Group — starting 2026</p>
     </div>
   </div>
 
   <main class="page-content">
 
     <!-- ═══════════════════════════════════════════════════════
-         NEWS ITEMS
          HOW TO ADD A NEWS ITEM
-         1. Copy one <article class="news-card"> … </article> block.
-         2. Update badge-month (3-letter abbreviation), badge-year,
-            the datetime attribute (YYYY-MM-DD), title, and body.
-         3. Newest items go at the TOP of the list.
+         Events / announcements  →  copy the standard .news-card block.
+         Items with a photo      →  copy the .news-card--featured block.
+         Publications            →  copy the .news-badge--pub block.
+         Update badge-month (3-letter abbr.), badge-year, title, body.
+         Newest items go at the TOP.
     ═══════════════════════════════════════════════════════════ -->
-    <h2 class="sh">Latest News</h2>
+
+    <p class="news-year-label">2026</p>
     <div class="news-list">
 
-      <!-- NEWS ITEM — copy & edit -->
-      <article class="news-card">
-        <div class="news-badge">
-          <span class="news-badge-month">May</span>
-          <span class="news-badge-year">2025</span>
-        </div>
-        <div>
-          <h3 class="news-title">New website launched</h3>
-          <p class="news-body">The ADM Research Group has launched its redesigned website.
-             Stay tuned for updates on our research, team, and events.</p>
+      <!-- ── EVENTS ─────────────────────────────────────────────── -->
+
+      <!-- FEATURED — with photo -->
+      <article class="news-card news-card--featured">
+        <img class="news-card-img"
+             src="images/news/ACRAI%20research%20day.jpeg"
+             alt="ACRAI Research Day 2026" />
+        <div class="news-card-body">
+          <div class="news-badge">
+            <span class="news-badge-month">Mar</span>
+            <span class="news-badge-year">2026</span>
+          </div>
+          <div>
+            <h3 class="news-title">ACRAI Research Day — 19 March 2026</h3>
+            <p class="news-body">The Antwerp Centre on Responsible AI (ACRAI) hosted its annual Research Day
+               on 19 March 2026, bringing together researchers, practitioners, and policymakers
+               to exchange ideas on responsible and explainable AI.</p>
+            <a class="news-link"
+               href="https://www.uantwerpen.be/en/research-groups/antwerp-center-responsible-ai/research-day/"
+               target="_blank" rel="noopener">Learn more ↗</a>
+          </div>
         </div>
       </article>
 
-      <!-- NEWS ITEM — copy & edit -->
+      <!-- ── PUBLICATIONS 2026 ──────────────────────────────────── -->
+
       <article class="news-card">
-        <div class="news-badge">
-          <span class="news-badge-month">Jan</span>
-          <span class="news-badge-year">2024</span>
+        <div class="news-badge news-badge--pub">
+          <span class="news-badge-month">New</span>
+          <span class="news-badge-year">Paper</span>
         </div>
         <div>
-          <h3 class="news-title">Paper accepted at [Conference name]</h3>
-          <p class="news-body">Our paper on [topic] has been accepted at [venue].
-             Congratulations to the authors!</p>
+          <h3 class="news-title">Prompt-Counterfactual Explanations for Generative AI System Behavior</h3>
+          <p class="news-body">S Goethals, F Provost, J Sedoc · <em>arXiv preprint</em></p>
+        </div>
+      </article>
+
+      <article class="news-card">
+        <div class="news-badge news-badge--pub">
+          <span class="news-badge-month">New</span>
+          <span class="news-badge-year">Paper</span>
+        </div>
+        <div>
+          <h3 class="news-title">On the Definition and Detection of Cherry-Picking in Counterfactual Explanations</h3>
+          <p class="news-body">J Hinns, S Goethals, S Van der Veeken, T Evgeniou, D Martens · <em>arXiv preprint</em></p>
+        </div>
+      </article>
+
+      <article class="news-card">
+        <div class="news-badge news-badge--pub">
+          <span class="news-badge-month">New</span>
+          <span class="news-badge-year">Paper</span>
+        </div>
+        <div>
+          <h3 class="news-title">Would a Large Language Model Pay Extra for a View? Inferring Willingness to Pay from Subjective Choices</h3>
+          <p class="news-body">M Reusens, S Goethals, T Calders, D Martens · <em>arXiv preprint</em></p>
+        </div>
+      </article>
+
+      <article class="news-card">
+        <div class="news-badge news-badge--pub">
+          <span class="news-badge-month">New</span>
+          <span class="news-badge-year">Paper</span>
+        </div>
+        <div>
+          <h3 class="news-title">Reranking individuals: The effect of fair classification within-groups</h3>
+          <p class="news-body">S Goethals, M Favier, T Calders · <em>ACM Journal on Responsible Computing</em></p>
+        </div>
+      </article>
+
+      <article class="news-card">
+        <div class="news-badge news-badge--pub">
+          <span class="news-badge-month">New</span>
+          <span class="news-badge-year">Paper</span>
+        </div>
+        <div>
+          <h3 class="news-title">Fairness principles across contexts: evaluating gender disparities of facts and opinions in large language models</h3>
+          <p class="news-body">S Goethals, L Rhue, A Sundararajan · <em>AI and Ethics</em></p>
+        </div>
+      </article>
+
+      <article class="news-card">
+        <div class="news-badge news-badge--pub">
+          <span class="news-badge-month">New</span>
+          <span class="news-badge-year">Paper</span>
+        </div>
+        <div>
+          <h3 class="news-title">Adapting Multiverse Analysis for Prediction: A Decision-Maker's Dashboard</h3>
+          <p class="news-body">F Ding, G Shmueli, T Greene, S Goethals · <em>Navigating the Model Uncertainty and the Rashomon Effect</em></p>
+        </div>
+      </article>
+
+      <article class="news-card">
+        <div class="news-badge news-badge--pub">
+          <span class="news-badge-month">New</span>
+          <span class="news-badge-year">Paper</span>
+        </div>
+        <div>
+          <h3 class="news-title">Calculating and Visualizing Feature Importance Values for Counterfactual Explanations</h3>
+          <p class="news-body">B Meulemeester, RMB de Oliveira, Y He, D Martens · <em>IEEE Access</em></p>
+        </div>
+      </article>
+
+      <article class="news-card">
+        <div class="news-badge news-badge--pub">
+          <span class="news-badge-month">New</span>
+          <span class="news-badge-year">Paper</span>
+        </div>
+        <div>
+          <h3 class="news-title">An Agentic Approach to Generating XAI-Narratives</h3>
+          <p class="news-body">Y He, D Martens · <em>arXiv preprint</em></p>
+        </div>
+      </article>
+
+      <article class="news-card">
+        <div class="news-badge news-badge--pub">
+          <span class="news-badge-month">New</span>
+          <span class="news-badge-year">Paper</span>
+        </div>
+        <div>
+          <h3 class="news-title">On the Importance and Evaluation of Narrativity in Natural Language AI Explanations</h3>
+          <p class="news-body">M Cedro, D Martens · <em>arXiv preprint</em></p>
+        </div>
+      </article>
+
+      <article class="news-card">
+        <div class="news-badge news-badge--pub">
+          <span class="news-badge-month">New</span>
+          <span class="news-badge-year">Paper</span>
+        </div>
+        <div>
+          <h3 class="news-title">Voluntary Tax Disclosures of Listed Companies in Europe</h3>
+          <p class="news-body">M Van Roy, A Jorissen, A Van de Vijver, D Martens · <em>Accounting in Europe</em></p>
         </div>
       </article>
 
