@@ -544,6 +544,46 @@ img { max-width: 100%; display: block; }
   line-height: 1.65;
 }
 
+.themes-circles {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.theme-circle {
+  text-align: center;
+  max-width: 220px;
+}
+
+.circle {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border: 2px solid #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 15px;
+  padding: 20px;
+  transition: transform 0.2s ease;
+}
+
+.circle h3 {
+  font-size: 1rem;
+  line-height: 1.3;
+}
+
+.theme-circle p {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.circle:hover {
+  transform: scale(1.05);
+}
+
 /* ── Selected publications ── */
 .pub-selected-grid {
   display: grid;
