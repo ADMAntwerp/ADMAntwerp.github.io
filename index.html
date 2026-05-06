@@ -3,332 +3,122 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ADM – Applied Data Mining Research Group</title>
+  <title>ADM Research Group – University of Antwerp</title>
+  <meta name="description" content="Applied Data Mining Research Group at the University of Antwerp. Research in explainable and responsible AI." />
   <link rel="icon" href="images/UA_Logo.png" />
   <link rel="stylesheet" href="assets/css/fontawesome-all.min.css" />
   <link rel="stylesheet" href="assets/css/adm.css" />
 </head>
 <body>
 
-  <!-- ═══════════════════════════════════════════════════════════
-       SITE HEADER — edit group name in .logo-text below
-  ═══════════════════════════════════════════════════════════════ -->
-  <header class="site-header">
-    <div class="header-inner">
-      <a class="logo" href="#" onclick="showTab('people'); return false;">
-        <img class="logo-img" src="images/UA_Logo.png" alt="UA Logo" />
-        <span class="logo-text">ADM Research Group</span>
+  <!-- ═══════════════════════════ SHARED NAV — active: Home ════ -->
+  <header class="site-nav">
+    <div class="nav-inner">
+      <a class="nav-brand" href="index.html">
+        <img class="nav-logo" src="images/UA_Logo.png" alt="UA" />
+        <div class="nav-name">
+          <strong>Applied Data Mining</strong>
+          <span>Research Group · University of Antwerp</span>
+        </div>
       </a>
-      <nav class="tab-nav" role="tablist">
-        <button class="tab-btn active" role="tab" onclick="showTab('people')">People</button>
-        <button class="tab-btn"        role="tab" onclick="showTab('research')">Research</button>
-        <button class="tab-btn"        role="tab" onclick="showTab('news')">News</button>
+      <nav class="nav-links">
+        <a class="nav-link active" href="index.html">Home</a>
+        <a class="nav-link" href="people.html">People</a>
+        <a class="nav-link" href="research.html">Research</a>
+        <a class="nav-link" href="news.html">News</a>
+        <a class="nav-link" href="work-with-us.html">Work With Us</a>
       </nav>
     </div>
   </header>
 
   <!-- ═══════════════════════════════════════════════════════════
-       HERO — edit tagline text here
+       HERO
+       Background image: images/group_pics/2024.jpeg
+       Change the year here if you update the group photo.
   ═══════════════════════════════════════════════════════════════ -->
-  <section class="hero">
-    <h1>Applied Data Mining<br>Research Group</h1>
-    <p>Leading research in <strong>explainable</strong> and <strong>responsible AI</strong>,
-       led by Prof. Dr. David Martens &middot; University of Antwerp</p>
+  <section class="landing-hero">
+    <div class="landing-hero-overlay"></div>
+    <div class="landing-hero-content">
+      <h1>Applied Data Mining<br>Research Group</h1>
+      <p>Pioneering <strong>explainable</strong> and <strong>responsible AI</strong> at the University of Antwerp</p>
+    </div>
   </section>
 
-
   <!-- ═══════════════════════════════════════════════════════════
-       PEOPLE TAB
+       ABOUT
+       Edit the two paragraphs below to describe the group.
   ═══════════════════════════════════════════════════════════════ -->
-  <div id="tab-people" class="tab-panel active" role="tabpanel">
-    <div class="container">
-
-      <!-- ── Current Members ─────────────────────────────────────
-           HOW TO ADD A MEMBER
-           1. Copy one member-card block below.
-           2. Update: name, role, photo src (in images/current_members/),
-              and the href links (LinkedIn, Google Scholar).
-           3. Remove any <a> line whose link you don't have.
-      ──────────────────────────────────────────────────────────── -->
-      <h2 class="section-title">Current Members</h2>
-      <div class="members-grid">
-
-        <!-- MEMBER -->
-        <div class="member-card">
-          <img src="images/current_members/David.jpg" alt="David Martens" />
-          <div class="member-info">
-            <h3>Prof. Dr. David Martens</h3>
-            <p class="member-role">Principal Investigator</p>
-            <div class="member-links">
-              <a href="https://www.linkedin.com/in/davidmartens/" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-              <a href="https://scholar.google.com/citations?hl=en&user=gbce1doAAAAJ" title="Google Scholar"><i class="fab fa-google"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <!-- MEMBER -->
-        <div class="member-card">
-          <img src="images/current_members/Sofie.jpg" alt="Sofie Goethals" />
-          <div class="member-info">
-            <h3>Dr. Sofie Goethals</h3>
-            <p class="member-role">Postdoctoral Researcher</p>
-            <div class="member-links">
-              <a href="https://www.linkedin.com/in/sofie-goethals-76805b158/" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-              <a href="https://scholar.google.com/citations?hl=en&user=3yM14pcAAAAJ" title="Google Scholar"><i class="fab fa-google"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <!-- MEMBER -->
-        <div class="member-card">
-          <img src="images/current_members/James.jpeg" alt="James Hinns" />
-          <div class="member-info">
-            <h3>James Hinns</h3>
-            <p class="member-role">PhD Researcher</p>
-            <div class="member-links">
-              <a href="https://www.linkedin.com/in/james-hinns/" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-              <a href="https://scholar.google.com/citations?hl=en&user=3UpcWvUAAAAJ" title="Google Scholar"><i class="fab fa-google"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <!-- MEMBER -->
-        <div class="member-card">
-          <img src="images/current_members/Yifan.jpg" alt="Yifan He" />
-          <div class="member-info">
-            <h3>Yifan He</h3>
-            <p class="member-role">PhD Researcher</p>
-            <div class="member-links">
-              <a href="https://www.linkedin.com/in/yifanhe2024/" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <!-- MEMBER -->
-        <div class="member-card">
-          <img src="images/current_members/Mateusz.JPG" alt="Mateusz Cedro" />
-          <div class="member-info">
-            <h3>Mateusz Cedro</h3>
-            <p class="member-role">PhD Researcher</p>
-            <div class="member-links">
-              <a href="https://www.linkedin.com/in/mateusz-cedro/" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-              <a href="https://scholar.google.com/citations?user=srXiChUAAAAJ&hl=en" title="Google Scholar"><i class="fab fa-google"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <!-- MEMBER -->
-        <div class="member-card">
-          <img src="images/current_members/Timour.jpeg" alt="Timour Ichmoukhamedov" />
-          <div class="member-info">
-            <h3>Dr. Timour Ichmoukhamedov</h3>
-            <p class="member-role">Postdoctoral Researcher</p>
-            <div class="member-links">
-              <a href="https://www.linkedin.com/in/timour-ichmoukhamedov/" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-              <a href="https://scholar.google.com/citations?user=KkqqV2kAAAAJ&hl=en" title="Google Scholar"><i class="fab fa-google"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <!-- MEMBER -->
-        <div class="member-card">
-          <img src="images/current_members/Stephan.jpeg" alt="Stephan Van der Veeken" />
-          <div class="member-info">
-            <h3>Dr. Stephan Van der Veeken</h3>
-            <p class="member-role">Postdoctoral Researcher</p>
-            <div class="member-links">
-              <a href="https://scholar.google.com/citations?user=J-mnFg4AAAAJ" title="Google Scholar"><i class="fab fa-google"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <!-- PASTE NEW MEMBER CARDS ABOVE THIS LINE -->
-
-      </div><!-- /members-grid -->
-
-
-      <!-- ── Alumni ───────────────────────────────────────────────
-           HOW TO ADD AN ALUMNUS: add a new <li>Name</li> entry.
-      ──────────────────────────────────────────────────────────── -->
-      <h2 class="section-title">Alumni</h2>
-      <ul class="alumni-list">
-        <li>Bart Minnaert</li>
-        <li>Jellis Vanhoeyveld</li>
-        <li>Enric Junqué de Fortuny</li>
-        <li>Dieter Devlaminck</li>
-        <li>Ellen Tobback</li>
-        <li>Julie Moeyersoms</li>
-        <li>Steven Verwerft</li>
-        <li>Marija Stankova</li>
-        <li>Sofie De Cnudde</li>
-        <li>Tom Vermeire</li>
-        <li>Stiene Praet</li>
-        <li>Pieter Leyman</li>
-        <li>Yanou Ramon</li>
-        <li>Raphael De Oliveira</li>
-        <li>Lize Coenen</li>
-        <li>Dieter Brughmans</li>
-        <li>Bjorge Meulemeester</li>
-        <li>Camille Dams</li>
-        <li>Mark Vergouwen</li>
-        <li>Ine Weyts</li>
-      </ul>
-
-
-      <!-- ── Group Photos ──────────────────────────────────────────
-           HOW TO ADD A PHOTO: copy one <figure> block, update the
-           year and the src path (put the file in images/group_pics/).
-      ──────────────────────────────────────────────────────────── -->
-      <h2 class="section-title">Over the Years</h2>
-      <div class="gallery-grid">
-        <figure>
-          <img src="images/group_pics/2024.jpeg" alt="Group photo 2024" />
-          <figcaption>2024</figcaption>
-        </figure>
-        <figure>
-          <img src="images/group_pics/2023.jpeg" alt="Group photo 2023" />
-          <figcaption>2023</figcaption>
-        </figure>
-        <figure>
-          <img src="images/group_pics/2022.jpeg" alt="Group photo 2022" />
-          <figcaption>2022</figcaption>
-        </figure>
-        <figure>
-          <img src="images/group_pics/2021.jpeg" alt="Group photo 2021" />
-          <figcaption>2021</figcaption>
-        </figure>
-        <figure>
-          <img src="images/group_pics/2017.jpg" alt="Group photo 2017" />
-          <figcaption>2017</figcaption>
-        </figure>
-        <figure>
-          <img src="images/group_pics/2015.jpg" alt="Group photo 2015" />
-          <figcaption>2015</figcaption>
-        </figure>
-        <!-- PASTE NEW GALLERY FIGURES ABOVE THIS LINE -->
+  <section class="about-section">
+    <div class="about-inner">
+      <div class="about-text">
+        <h2>Who we are</h2>
+        <p>
+          The <strong>Applied Data Mining Research Group</strong> develops and applies data mining
+          techniques to support better decision-making. We specialize in
+          <strong>explainable AI</strong> — automatically explaining the decisions of
+          black-box machine learning systems — and in building predictive models
+          from large-scale behavioral data such as payment histories, location traces,
+          and web-browsing activity.
+        </p>
+        <p>
+          The group is part of the <a href="https://www.uantwerpen.be/en/research-groups/engineering-management/">Department
+          of Engineering Management</a> at the University of Antwerp and is led by
+          Prof. Dr. David Martens, who also chairs the
+          <strong>Antwerp Centre on Responsible AI (ACRAI)</strong> — the first Flanders
+          university to offer a dedicated course on Data Science and Ethics.
+        </p>
       </div>
-
+      <div class="about-photo">
+        <img src="images/group_pics/2023.jpeg" alt="ADM Research Group" />
+      </div>
     </div>
-  </div><!-- /tab-people -->
-
+  </section>
 
   <!-- ═══════════════════════════════════════════════════════════
-       RESEARCH TAB
+       FEATURE CARDS — links to the main sections
+       Edit the descriptions; add new cards by copying a .feature-card block.
   ═══════════════════════════════════════════════════════════════ -->
-  <div id="tab-research" class="tab-panel" role="tabpanel">
-    <div class="container">
+  <section class="features-section">
+    <div class="features-inner">
+      <p class="features-heading">Explore</p>
+      <div class="features-grid">
 
-      <!-- ── Research Themes ─────────────────────────────────────
-           HOW TO ADD A THEME: copy one theme-card block and update
-           the <h3> title and <p> description.
-      ──────────────────────────────────────────────────────────── -->
-      <h2 class="section-title">Research Themes</h2>
-      <div class="themes-grid">
+        <a class="feature-card" href="people.html">
+          <div class="feature-icon"><i class="fas fa-users"></i></div>
+          <div class="feature-title">People</div>
+          <div class="feature-desc">Meet our current team of researchers and browse our list of alumni.</div>
+          <div class="feature-arrow">View team →</div>
+        </a>
 
-        <div class="theme-card">
-          <h3>Explainable AI</h3>
-          <p>We develop methods that make black-box machine-learning decisions interpretable,
-             including counterfactual explanations and rule-based approaches.</p>
-        </div>
+        <a class="feature-card" href="research.html">
+          <div class="feature-icon"><i class="fas fa-flask"></i></div>
+          <div class="feature-title">Research</div>
+          <div class="feature-desc">Discover our research themes and selected publications in explainable AI.</div>
+          <div class="feature-arrow">View research →</div>
+        </a>
 
-        <div class="theme-card">
-          <h3>Responsible AI</h3>
-          <p>Our work addresses fairness, accountability, and transparency in AI systems,
-             ensuring data-driven decisions are ethical and unbiased.</p>
-        </div>
+        <a class="feature-card" href="news.html">
+          <div class="feature-icon"><i class="fas fa-newspaper"></i></div>
+          <div class="feature-title">News</div>
+          <div class="feature-desc">Stay up to date with the latest news from the group — papers, awards, and events.</div>
+          <div class="feature-arrow">View news →</div>
+        </a>
 
-        <div class="theme-card">
-          <h3>Predictive Modeling</h3>
-          <p>We build powerful predictive models from fine-grained behavioral data —
-             payment, location, and browsing — across finance, healthcare, and beyond.</p>
-        </div>
+        <a class="feature-card" href="work-with-us.html">
+          <div class="feature-icon"><i class="fas fa-briefcase"></i></div>
+          <div class="feature-title">Work With Us</div>
+          <div class="feature-desc">Interested in joining the group? Find open positions and contact information.</div>
+          <div class="feature-arrow">Get in touch →</div>
+        </a>
 
-        <!-- PASTE NEW THEME CARDS ABOVE THIS LINE -->
-
-      </div><!-- /themes-grid -->
-
-
-      <!-- ── Publications ────────────────────────────────────────
-           HOW TO ADD A PUBLICATION
-           1. Copy one <li class="pub"> … </li> block below.
-           2. Fill in: year, title, authors + venue in pub-meta.
-           3. Uncomment and update the <a class="pub-link"> if there is a DOI.
-           4. Most-recent entries should go at the top of the list.
-      ──────────────────────────────────────────────────────────── -->
-      <h2 class="section-title">Selected Publications</h2>
-      <ul class="pub-list">
-
-        <!-- PUBLICATION — copy & edit this block -->
-        <li class="pub">
-          <span class="pub-year">2024</span>
-          <div class="pub-body">
-            <p class="pub-title">Example Publication Title</p>
-            <p class="pub-meta">Author One, Author Two, David Martens &middot; <em>Journal / Conference</em></p>
-            <!-- <a class="pub-link" href="https://doi.org/10.xxxx/xxxxx">DOI ↗</a> -->
-          </div>
-        </li>
-
-        <!-- PUBLICATION — copy & edit this block -->
-        <li class="pub">
-          <span class="pub-year">2023</span>
-          <div class="pub-body">
-            <p class="pub-title">Another Example Publication</p>
-            <p class="pub-meta">Author A, Author B &middot; <em>Venue Name</em></p>
-            <!-- <a class="pub-link" href="https://doi.org/10.xxxx/xxxxx">DOI ↗</a> -->
-          </div>
-        </li>
-
-        <!-- PASTE NEW PUBLICATIONS ABOVE THIS LINE -->
-
-      </ul>
-
+      </div>
     </div>
-  </div><!-- /tab-research -->
+  </section>
 
-
-  <!-- ═══════════════════════════════════════════════════════════
-       NEWS TAB
-  ═══════════════════════════════════════════════════════════════ -->
-  <div id="tab-news" class="tab-panel" role="tabpanel">
-    <div class="container">
-
-      <!-- ── News Items ──────────────────────────────────────────
-           HOW TO ADD A NEWS ITEM
-           1. Copy one <article class="news-item"> … </article> block.
-           2. Update the datetime attribute (YYYY-MM-DD), the visible
-              date text, the headline, and the body paragraph.
-           3. Most-recent items should go at the top of the list.
-      ──────────────────────────────────────────────────────────── -->
-      <h2 class="section-title">News</h2>
-
-      <!-- NEWS ITEM — copy & edit this block -->
-      <article class="news-item">
-        <time class="news-date" datetime="2025-05-01">May 2025</time>
-        <h3 class="news-title">New website launched</h3>
-        <p class="news-body">The ADM Research Group has launched its redesigned website.
-           Stay tuned for updates on our research, team, and events.</p>
-      </article>
-
-      <!-- NEWS ITEM — copy & edit this block -->
-      <article class="news-item">
-        <time class="news-date" datetime="2024-01-01">2024</time>
-        <h3 class="news-title">Paper accepted at [Conference]</h3>
-        <p class="news-body">Our paper on … has been accepted at …
-           Congratulations to the authors!</p>
-      </article>
-
-      <!-- PASTE NEW NEWS ITEMS ABOVE THIS LINE -->
-
-    </div>
-  </div><!-- /tab-news -->
-
-
-  <!-- ═══════════════════════════════════════════════════════════
-       FOOTER — update social links / email below if needed
-  ═══════════════════════════════════════════════════════════════ -->
+  <!-- ═══════════════════════════ SHARED FOOTER ════════════════ -->
   <footer class="site-footer">
     <div class="footer-inner">
-      <div class="footer-links">
+      <div class="footer-icons">
         <a href="https://www.linkedin.com/school/uantwerpenfbe/" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
         <a href="https://github.com/ADMAntwerp" title="GitHub"><i class="fab fa-github"></i></a>
         <a href="mailto:david.martens@uantwerp.be" title="Email"><i class="fas fa-envelope"></i></a>
@@ -336,24 +126,6 @@
       <p class="footer-copy">&copy; Applied Data Mining Research Group &middot; University of Antwerp</p>
     </div>
   </footer>
-
-
-  <script>
-    function showTab(name) {
-      document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
-      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-      document.getElementById('tab-' + name).classList.add('active');
-      document.querySelector('.tab-btn[onclick*="\'' + name + '\'"]').classList.add('active');
-      history.replaceState(null, '', '#' + name);
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
-
-    // Restore tab from URL hash on load
-    (function () {
-      var hash = location.hash.replace('#', '');
-      if (['people', 'research', 'news'].includes(hash)) showTab(hash);
-    })();
-  </script>
 
 </body>
 </html>
