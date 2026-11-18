@@ -454,6 +454,17 @@ img { max-width: 100%; display: block; }
   object-position: top;
 }
 
+.member-photo-placeholder {
+  width: 100%;
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--border);
+  color: var(--surface);
+  font-size: 4rem;
+}
+
 .member-body { padding: 0.85rem 1rem 1rem; }
 
 .member-name {
